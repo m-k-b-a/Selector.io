@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Selecter.io</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <body style="color: yellow"> <b>   Welcome to Selecter.io! The purpose of the website is to allow the user to pick from one of these games to download and play. It's intended to for users who are bored and want to play a game! </b></body>
+    
+
+
+    <h4>Random Choice Generator</h4>
+
+    <p id="result">Click the button to generate a random video game choice.</p>
+
+    <button onclick="generateRandomChoice()">Generate Random Choice</button>
+
+    <script>
+      // Array of choices
+      var choices = ["Doom Eternal","Apex Legends", "Portal 2", "Unpacking", "The Walking Dead", "Red Dead Redemption II","Batman: Arkham City","Spider-Man: Miles Morales"];
+
+      // Function to generate a random choice
+      function generateRandomChoice() {
+        // Get a random index from the choices array
+        var randomIndex = Math.floor(Math.random() * choices.length);
+
+        // Get the random choice using the random index
+        var randomChoice = choices[randomIndex];
+
+        // Display the random choice in the result paragraph
+        document.getElementById("result").innerHTML = "Random Choice: " + randomChoice;
+      }
+    </script>
+  
+  
+
+  <p style= "color: darkorange; font-family: Arial, Helvetica, sans-serif";><a href="about.html">About Page</a></p>
+  <p style= "color: darkorange; font-family: Arial, Helvetica, sans-serif"><a href= "why.html">Why I Created This</a></p>
+  <p style= "color: darkorange; font-family: Arial, Helvetica, sans-serif"><a href= "credited.html";>Credited Source </a></p>
+  
+  
+  <style>
+
+  
+  body {
+    background-color: #222;
+    color: #fff;
+    font-family: sans-serif;
+  }
+
+    .card-container {
+      perspective: 1000px;
+    }
+
+    .card {
+      width: 200px;
+      height: 300px;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+    }
+
+    .card:hover {
+      transform: rotateY(180deg);
+    }
+
+    .card-front,
+    .card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-front {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    .card-back {
+      background-color: #2ecc71;
+      color: #fff;
+      transform: rotateY(180deg);
+    }
+
+    section{
+margin: 20px
+    }
+
+  /* Retro colors */
+  .retro-color1 {
+    color: #ff0000;
+  }
+
+  .retro-color2 {
+    color: #00ff00;
+  }
+
+  .retro-color3 {
+    color: #0000ff;
+  }
+
+  .retro-bgcolor1 {
+    background-color: #ff0000;
+  }
+
+  .retro-bgcolor2 {
+    background-color: #00ff00;
+  }
+
+  .retro-bgcolor3 {
+    background-color: #0000ff;
+  }
+
+    </style>
+
+<body>
+  <header>
+    
+    <h1 style= "font-family:Comic Sans MS; color:darkgreen;
+      size: 20px; text-align:center;"> Selecter.io</h1>
+    <br>
+    
+  </header>
+
+  <main>
+    <section> 
+ 
+  
+        <article>
+
+         
+          
+          <br>
+          <h2 style= "font-family: Retroserif; color:teal; ">FPS Games:</h2>
+          <br>
+          <d>
+          <h3 style= "color:blue";>Doom Eternal</h3>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/782330/header.jpg?t=1693933695" alt="Game 1">
+          <br>
+          <p style= "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkorange;"> Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity. The only thing they fear... is you.</p>
+          <h3>FAQs: How hard is this game?<br>
+          Answer: It's difficult but pretty fun when you get the hang of it.</h3>
+          <br>
+          <a href="https://store.steampowered.com/app/782330/DOOM_Eternal/" style= "color:red;">--->Download Now</a>
+<br>
+<br>
+           <div class="Apex_Legends">
+          <h3 style= "color:blue">Apex Legends</h3>
+          <img src= "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg?t=1695930392"alt= "Game 2">
+          <br>
+          <p style= "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkorange"> Conquer with character in Apex Legends, a free-to-play* Hero shooter where legendary characters with powerful abilities team up to battle for fame & fortune on the fringes of the Frontier.
+
+            Master an ever-growing roster of diverse Legends, deep-tactical squad play, and bold, new innovations that go beyond the Battle Royale experience — all within a rugged world where anything goes. Welcome to the next evolution of Hero Shooter.
+</p>
+          <h3>FAQS: Is Apex Legends the best FPS game?<br> 
+            Answer: Some people says that it is the best, over 400,000 people play it everyday.</h3>
+          <br>
+          <a href="https://store.steampowered.com/app/1172470/Apex_Legends/" style= "color:red;">--->Download Now</a>
+</div>
+<br>
+<br>
+          <h2 style= "font-family: Retroserif; color:teal; ">Puzzle Games:</h2>
+          <br>
+          <h3 style= "color:blue">Portal 2</h3>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg?t=1683129624" alt="Game 3">
+          <br>
+          <p style= "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkorange"> Portal 2 draws from the award-winning formula of innovative gameplay, story, and music that earned the original Portal over 70 industry accolades and created a cult following.
+
+          The single-player portion of Portal 2 introduces a cast of dynamic new characters, a host of fresh puzzle elements, and a much larger set of devious test chambers. Players will explore never-before-seen areas of the Aperture Science Labs and be reunited with GLaDOS, the occasionally murderous computer companion who guided them through the original game.
+
+          The game’s two-player cooperative mode features its own entirely separate campaign with a unique story, test chambers, and two new player characters. This new mode forces players to reconsider everything they thought they knew about portals. Success will require them to not just act cooperatively, but to think cooperatively.
+</p>
+          <h3>FAQS: How many endings does Portal 2 has? <br>
+            Answer: It has two different endings depending on the choices the player chooses.</h3>
+          <br>
+          <a href="https://store.steampowered.com/app/620/Portal_2/" style= "color:red;">--->Download Now</a>
+<br>
+<br>
+          <h3 style= "color:blue">Unpacking</h3>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1135690/header.jpg?t=1681259723" alt="Game 4">
+          <br>
+          <p style= "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkorange;"> Unpacking is a zen puzzle game about the familiar experience of pulling possessions out of boxes and fitting them into a new home. Part block-fitting puzzle, part home decoration, you are invited to create a satisfying living space while learning clues about the life you’re unpacking.</p>
+          <h3>FAQS: How many levels are there in Unpacking<br> Answer: There are 35 levels divided into 8 rooms.</h3>
+          <br>
+          <a href="https://store.steampowered.com/app/1135690/Unpacking/" style= "color:red;">--->Download Now</a>
+<br>
+<br>
+          <h2 style= "font-family: Retroserif; color:teal; ">Adventure Games:</h2>
+          <br>
+          <h3 style= "color:blue">The Walking Dead</h3>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1449690/header.jpg?t=1691747434" alt="Game 5">
+          <p style= "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkorange;"> The Walking Dead: The Telltale Definitive Series contains all 4 Seasons, 400 Days, and The Walking Dead: Michonne, which includes over 50 hours of gameplay across 23 unique episodes. With graphical enhancements, behind the scenes bonus features and faithful recreations of classic menus, this is the definitive way to experience Clementine’s journey and find out how her story ends.</p>
+          <h3>FAQS: How long does it take to complete Walking Dead? <br>Answer: It takes 40 1/2 - 48 hours to complete the game.</h3>
+          <br>
+          <a href="https://store.steampowered.com/app/1449690/The_Walking_Dead_The_Telltale_Definitive_Series/" style= "color:red;">--->Download Now</a>
+<br>
+<br>
+            <h3 style= "color:blue">Red Dead Redemption 2</h3>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg?t=1695140956" alt="Game 6">
+          <p style= "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkorange"> America, 1899.
+
+          Arthur Morgan and the Van der Linde gang are outlaws on the run. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.
+</p>
+            <h4>FAQS: How long does it take to complete Red Dead Redemption 2? Answer: It takes 40-60 hours to complete the game. </h4>
+            <br>
+          <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" style= "color:red;">--->Download Now</a>
+<br>
+<br>
+          <h2 style= "font-family: Retroserif; color:teal; ">Action Games:</h2>
+            <br>
+            <h3 style= "color:blue">Batman: Arkman City</h3>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/200260/header.jpg?t=1681938743" alt="Game 7">
+          <p style= "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkorange"> Batman: Arkham City builds upon the intense, atmospheric foundation of Batman: Arkham Asylum, sending players flying through the expansive Arkham City - five times larger than the game world in Batman: Arkham Asylum - the new maximum security "home" for all of Gotham City's thugs, gangsters and insane criminal masterminds. Featuring an incredible Rogues Gallery of Gotham City's most dangerous criminals including Catwoman, The Joker, The Riddler, Two-Face, Harley Quinn, The Penguin, Mr. Freeze and many others, the game allows players to genuinely experience what it feels like to be The Dark Knight delivering justice on the streets of Gotham City. </p>
+            <h3>FAQS: How long does it take to complete Batman: Arkham City? Answer: It takes 45 1/2 hours to complete the game. </h3>
+            <br>
+          <a href="https://store.steampowered.com/app/200260/Batman_Arkham_City__Game_of_the_Year_Edition/" style= "color:red;">--->Download Now</a>
+<br>
+<br>
+          <h3 style= "color:blue">Marvel's Spider-Man: Miles Morales</h3>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1817190/header.jpg?t=1695916167" alt="Game 8">
+          <p style= "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: darkorange"> After the events of Marvel’s Spider-Man Remastered, teenage Miles Morales is adjusting to his new home while following in the footsteps of his mentor, Peter Parker, as a new Spider-Man. When a fierce power struggle threatens to destroy his home, Miles must take up the mantle of Spider-Man and own it</p>
+            <h3>FAQS: How long does it takes to complete Marvel's Spider-Man: Miles Morales? Answer: It takes 18 hours to complete the game. </h3>
+            <br>
+          <a href="https://store.steampowered.com/app/1817190/Marvels_SpiderMan_Miles_Morales/" style= "color:red;">--->Download Now</a>
+    
+      
+        </article>
+       
+     
+    </section>
+
+
+  </main>
+  
+</body>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Choice Generator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+    </style>
+  </head>
+  
+
+  </body>
+  </html>
+
+  
+</html>
